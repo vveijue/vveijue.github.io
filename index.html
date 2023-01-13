@@ -2,18 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="vveijue" content="width=device-width, initial-scale=1.0">
     <title>vveijue's homepage</title>
+    <link rel="shortcut icon" href="windows.ico">
     <style type="text/css">
 
         a:link {color: #52adc8;text-decoration: none;}
         a:visited {color: #52adc8;text-decoration: none;}
         a:hover {color: #326a7b;text-decoration: underline;}
         a:active {color: #baeeff;text-decoration: none;}
+        
+        ::selection {
+            color: white;
+            background: black;
+        }
         body{
-            background-color:#f5f5d5;
+            /* background-color:#fcffdd; */
+            background-color:#fcfadb;
             font-family:'Times New Roman','宋体';
-            color: #1a2a3a;
+            color: #2a3a4a;
         }
         h1{
             font-size: 1.6em;
@@ -24,40 +31,56 @@
         .footer{
             height: 50px;
         }
+
+        .button {
+            background-color:transparent;
+            font-family:'Times New Roman','宋体';
+            color: #52adc8;
+            border: none;
+            border-radius: 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: medium;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+        .button1{
+            background-color:transparent;
+            color: #52adc8;
+        }
+        .button1:hover{
+            background-color:#52adc8;
+            color: white;
+        }
     </style>
 </head>
 <body class="w3-content" style="max-width:3000px">
     <div id="container">
         <div id="header" style="text-align: center;">
-            <h1 style="margin-bottom:0;">vveijue</h1>
+            <h1 style="margin-bottom:0;font-family: -apple-system,'San Francisco','Roboto','Segoe UI','Helvetica Neue','Lucida Grand','Arial','sans-serif';">
+                vveijue 韦珏
+            </h1>
         </div>
-
+        <div style="height: 10px;"></div>
         <nav style="text-align: center;"> 
-            <a href="content">CV</a> | 
-            <a href="/css/">Short Bio</a> | 
-            <a href="/js/">elif</a> | 
-            <a href="/jquery/">else</a>
+            <button class="button button1" onclick="document.getElementById('iframe').src='profile.html'">Profile</button> /
+            <button class="button button1" onclick="document.getElementById('iframe').src='contact.html'">Contact</button>
         </nav>            
-            
-        <div style="height: 100px;"></div>
+        <div style="height: 50px;"></div>
     </div>
-    <div style="float: left;width: 32%;height: 300px;"></div>
-    <div id="menu" style="height:300px;width:30%;float:left;">
-        <b>List</b><br><br>
-        1<br>
-        2<br>
-        3
+    <div id="container" style="min-height: 550px;margin: 0;">
+        <div style="float: left ;width: 32%;height: 550px;"></div>
+        <div style="float: right;width: 32%;height: 550px;"></div>
+        <div>
+            <iframe id="iframe" src="profile.html" frameborder="0" style="align-items: center;width: 36%;"></iframe>
+        </div>
+        
     </div>
 
-        
-    <div id="content" style="background-color:transparent;height:300px;">
-        内容在这里<br>
-        <a href="https://vveij.github.io">my homepage</a>
-    </div>
-        
     <div class="content"></div>
     <div id="footer" style="text-align:center;">
-        © vveijue
+        © 2023 vveijue   <a href="https://github.com/vveijue" title="github">github</a>
     </div>
 </body>
 </html>
