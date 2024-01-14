@@ -3737,11 +3737,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .social-wrap a.social:hover {
   color: #ff5724;
-  z-index: 1;
   filter: unset;
-  transform: translateY(-1px);
-  background: linear-gradient(145deg, #ddd, #fff);
-  box-shadow: 2px 4px 8px #ddd, -2px -4px 8px #fff;
 }
 .proj-wrap {
   display: grid;

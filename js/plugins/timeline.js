@@ -78,7 +78,7 @@ const StellarTimeline = {
         var cell = '<div class="timenode" index="' + i + '">';
         cell += '<div class="header">';
         if (!users.length && item.user && !hide.includes('user')) {
-          cell += '<a class="user-info" href="' + item.html_url + '" target="_blank" rel="external nofollow noopener noreferrer">'; //gitea: item.user.html_url -> item.html_url
+          cell += '<a class="user-info" href="' + item.user.website + '" target="_blank" rel="external nofollow noopener noreferrer">'; //gitea: item.user.html_url -> item.html_url
           cell += '<img src="' + item.user.avatar_url + '">';
           cell += '<span>' + item.user.login + '</span>';
           cell += '</a>';
